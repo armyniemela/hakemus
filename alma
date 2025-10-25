@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Armin hakemus</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: limegreen;
+            text-rendering: optimizeLegibility;
+        }
+        .content {
+            max-width: 640px;
+            margin: auto;
+            padding: 2em;
+        }
+        h1 {
+            color: whitesmoke;
+            font-size: 2.5em;
+        }
+        p {
+            line-height: 1.6;
+            padding-bottom: 1em;
+        }
+        button {
+            font-size: 1em;
+            margin: 0.5em 0;
+            padding: 0.5em 1em;
+            cursor: pointer;
+        }
+        #application, #emoji {
+            display: none;
+            margin-top: 1em;
+        }
+        #contact {
+            margin-top: 2em;
+            font-style: italic;
+        }
+    </style>
+    <script>
+        function showApplication() {
+            document.getElementById('application').style.display = 'block';
+            document.getElementById('emoji').style.display = 'none';
+        }
+        function showEmoji() {
+            document.getElementById('application').style.display = 'none';
+            document.getElementById('emoji').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <h1>Hei, olen kiinnostunut avoimesta sijaisuudesta datalähtöisenä toimittajana.</h1>
+        <p>Haluatko lukea hakemukseni?</p>
+        <button onclick="showApplication()">Heti, kiitos!</button>
+        <button onclick="showEmoji()">Ehkä myöhemmin...</button>
+
+        <div id="application">
+            <p><strong>Hakemusteksti:</strong><br>
+            Olen kiinnostunut datajournalistin sijaisuudesta Alma Median businessmedioissa. Työskentelen tällä hetkellä toimitussihteerinä Alma Business Mediassa, ja olen viime vuosina ollut mukana useissa datajournalistisissa projekteissa kirjoittavana toimittajana.<br><br>
+            Olen täydentänyt osaamistani datajournalismin koulutuksilla, mm. Columbian yliopiston Lede-ohjelmassa sekä Tampereen avoimessa yliopistossa. Hallitsen keskeisiä työkaluja kuten Pythonin pandas-kirjaston, Jupyter Notebooksin, Playwrightin sekä visualisointityökaluja kuten ai2html, Flourish ja Datawrapper.<br><br>
+            Olen tottunut visualisoimaan talousdataa, erityisesti sijoittamiseen liittyviä ilmiöitä. Sijoittaminen on myös henkilökohtainen kiinnostuksenkohteeni, ja uskon, että pystyn tunnistamaan lukijoita kiinnostavia näkökulmia ja käsittelemään niitä datan avulla uudella tavalla.<br><br>
+            Yhdistän toimituksellisen kokemukseni, visuaalisen osaamiseni ja tekniset taitoni tuottaakseni sisältöä, joka on sekä informatiivista että helposti lähestyttävää. Uskon, että voisin tuoda lisäarvoa tiimiin, joka kehittää datalähtöistä talousjournalismia.</p>
+        </div>
+
+        <div id="emoji">
+            <p>😩</p>
+        </div>
+
+        cv_an_kl_10_2025.pdf
+            <button>CV#Armi Niemelä</button>
+        </a>
+
+        <div id="contact">
+            <p>Ota yhteyttä, jos haluat keskustella tehtävästä lisää – vastaan mielelläni!</p>
+        </div>
+    </div>
+</body>
+</html>
